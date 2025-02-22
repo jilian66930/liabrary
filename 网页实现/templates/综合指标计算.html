@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合评价计算器</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>综合评价计算器</h1>
+        <form id="matrix-form">
+            <h2>层次分析法计算权重</h2>
+            <h3>一级指标权重</h3>
+            <button type="button" onclick="addPrimaryMatrix()">添加一级指标矩阵</button>
+            <div id="primary-matrices-container"></div>
+
+            <h3>二级指标权重</h3>
+            <button type="button" onclick="addSecondaryMatrix()">添加二级指标矩阵</button>
+            <div id="secondary-matrices-container"></div>
+
+            <h2>模糊评价法计算矩阵</h2>
+            <button type="button" onclick="createSecondaryMatrices()">自动创建模糊评价原矩阵</button>
+            <div id="fuzzy-evaluation-matrices"></div>
+
+            <button type="submit">计算</button>
+        </form>
+
+        <h2>计算结果</h2>
+        <p id="result"></p>
+    </div>
+    <script src="{{ url_for('static', filename='script_1.js') }}"></script>
+</body>
+</html>

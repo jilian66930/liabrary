@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;  /* 水平居中 */
+    align-items: flex-start;  /* 垂直顶部对齐 */
+    height: 100vh;  /* 占满视口高度 */
+    margin: 0;
+    background-color: #f4f4f4;  /* 背景色 */
+    font-family: Arial, sans-serif;  /* 字体 */
+    overflow: auto;  /* 允许出现滚动条 */
+}
+
+.container {
+    max-width: 1000px;
+    max-height: 90vh;  /* 设置最大高度 */
+    margin: 0 auto;  /* 让 container 水平居中 */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    border-radius: 5px;  /* 使 container 边角圆润 */
+    background: #fff;  /* 为 container 添加背景 */
+    overflow-y: auto;  /* 纵向允许滚动 */
+}
+
+.matrix-container {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.matrix-input {
+    margin-bottom: 6px;
+}
+
+input[type="number"] {
+    width: 30px;
+    margin: 2px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
